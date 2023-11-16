@@ -76,7 +76,7 @@ fetch("http://localhost:3007/suggest")
       html += `<div class="swiper-slide bg-primary1 rounded-2xl ">
     <a
       href="#"
-      class="p-3 flex flex-col grow-1 addHover"
+      class="p-3 flex flex-col grow-1 addHover relative"
     >
       <img src="${elem.img}" onmouseover="this.src='${elem.hover}'"
       onmouseout="this.src='${elem.img}'"

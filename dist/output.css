@@ -1548,6 +1548,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 260px;
 }
 
+.w-\[281px\] {
+  width: 281px;
+}
+
 .w-\[2px\] {
   width: 2px;
 }
