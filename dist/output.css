@@ -1548,6 +1548,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 260px;
 }
 
+.w-\[281px\] {
+  width: 281px;
+}
+
 .w-\[2px\] {
   width: 2px;
 }
@@ -1638,10 +1642,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[281px\] {
-  width: 281px;
 }
 
 .min-w-0 {
