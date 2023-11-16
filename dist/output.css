@@ -2722,10 +2722,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
@@ -2744,10 +2740,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .gap-\[24px\] {
   gap: 24px;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .gap-x-3 {
@@ -3692,8 +3684,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding: 1rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-\[10px\] {
@@ -3722,10 +3714,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .p-\[auto\] {
   padding: auto;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .\!py-0 {
@@ -6379,24 +6367,12 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-top: 0px;
   }
 
-  .md\:mt-8 {
-    margin-top: 2rem;
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .md\:mt-\[124px\] {
     margin-top: 124px;
-  }
-
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .md\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .md\:mt-3 {
-    margin-top: 0.75rem;
   }
 
   .md\:block {
