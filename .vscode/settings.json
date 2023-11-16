@@ -11,7 +11,9 @@
     "package-lock.json": true,
     "fontawesome-free-6.4.2-web": true,
     "media": true,
-    "swiper": true
+    "swiper": true,
+    "node_modules": true,
+    "package.json": true
   },
   "hide-files.files": [
     "jquery",
@@ -19,6 +21,8 @@
     "package-lock.json",
     "fontawesome-free-6.4.2-web",
     "media",
-    "swiper"
+    "swiper",
+    "node_modules",
+    "package.json"
   ]
 }
