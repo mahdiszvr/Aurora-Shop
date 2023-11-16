@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Shop</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./media/Logo-Final.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body class="font-IranYekan text-secondary1">
+    <!--Start Navbar-->
+    <nav
+      class="w-full h-[64px] md:h-[104px] bg-menu rounded-b-[24px] fixed top-0 z-[800] shadow-lg"
+    >
+      <!--Start Hamburger Menu-->
+      <div
+        class="H-Menu absolute font-normal bg-menu text-sm md:text-md font-IranYekanN"
+      >
+        <ul class="h-full flex flex-col justify-between">
+          <div class="li flex flex-col">
+            <!--Start Close button-->
+            <li class="border-none p-2 pb-0">
+              <button
+                class="cross text-secondary1 text-xl font-medium w-[30px] h-[30px] bg-icon rounded-[12px] flex items-center justify-center cursor-pointer hover:bg-hover hover:text-icon transition-all duration-150 ease-linear"
+              >
+                x
+              </button>
+            </li>
+            <!--End Close button-->
+
+            <!--Start Sign in / Log in-->
+            <li class="flex justify-center items-center gap-x-3 h-[45px]">
+              <a href="./signin.html" class="hover:text-hover">عضویت</a>
+              <span>|</span>
+              <a href="./login.html" class="hover:text-hover">ورود</a>
+            </li>
+            <!--End Sign in / Log in-->
+
+            <!--Start Search erea-->
+            <li
+              class="flex justify-center items-center h-[60px] border-b-[1px] bg-[#ecd0fc]"
+            >
+              <div
+                id="search-navbar2"
+                class="serach w-[80%] h-[38px] px-[8px] flex items-center gap-x-[8px] bg-icon rounded-[16px]"
+              >
+                <img
+                  src="./media/svg/Search.svg"
+                  id="search-icon2"
+                  class="text-secondary1 w-[24px] h-[24px] cursor-pointer mr-[2px]"
+                />
+                <input
+                  type="text"
+                  id="search-input2"
+                  class="w-[180px] text-[#BF93C0] bg-icon border-none outline-none text-sm font-IranYekanL"
+                  placeholder="جستجو..."
+                />
+              </div>
+            </li>
+            <!--End Search erea-->
+
+            <!--Start menu-->
+            <a
+              href="#"
+              class="flex justify-center items-center h-[40px] hover:text-hover"
+            >
+              <li>دسته بندی 1</li>
+            </a>
+            <a
+              href="#"
+              class="flex justify-center items-center h-[40px] hover:text-hover"
+            >
+              <li>دسته بندی 2</li>
+            </a>
+            <a
+              href="#"
+              class="flex justify-center items-center h-[40px] hover:text-hover"
+            >
+              <li>دسته بندی 3</li>
+            </a>
+            <a
+              href="#"
+              class="flex justify-center items-center h-[40px] hover:text-hover"
+            >
+              <li>تماس با ما</li>
+            </a>
+            <a
+              href="#"
+              class="flex justify-center items-center h-[40px] hover:text-hover"
+            >
+              <li>درباره ما</li>
+            </a>
+            <!--End menu-->
+          </div>
+
+          <!--Start phone-->
+          <a
+            href="tel:09934003450"
+            class="flex justify-center items-center h-[40px] hover:text-hover"
+          >
+            <li class="flex justify-center items-center gap-x-3">
+              09909009009<img src="./media/svg/Phone.svg" />
+            </li>
+          </a>
+          <!--End phone-->
+        </ul>
+      </div>
+      <!--End Hamburger Menu-->
+
+      <!--Start Top navbar-->
+      <div
+        class="logo h-[64px] bg-nav px-[20px] md:px-[50px] rounded-b-[24px] flex items-center justify-between"
+      >
+        <!--Start Navbar Right side-->
+        <div class="right flex items-center gap-[20px]">
+          <!--Start Hamburger Button-->
+          <button
+            class="hamburger text-secondary1 text-xl font-semibold w-[40px] h-[40px] md:w-[44px] md:h-[44px] bg-icon rounded-[16px] flex items-center justify-center cursor-pointer hover:bg-hover hover:text-icon transition-all duration-150 ease-linear md:hidden"
+          >
+            &#9776;
+          </button>
+
+          <!--End Hamburger Button-->
+
+          <!--Start Logo-->
+          <a
+            href="#"
+            class="h-[44px] flex items-center gap-x-[10px] order-2 md:order-1"
+          >
+            <img
+              src="./media/Logo-Final.png"
+              class="w-[40px] h-[40px] md:w-[44px] md:h-[44px]"
+            />
+            <span class="text-lg md:text-2xl text-secondary1 font-Ananda"
+              >Aurora</span
+            >
+          </a>
+          <!--End Logo-->
+
+          <!--Start Search erea-->
+          <div
+            id="search-navbar"
+            class="serach hidden w-[44px] h-[44px] px-[8px] md:flex items-center md:gap-x-[10px] bg-icon rounded-[16px] order-2"
+          >
+            <img
+              src="./media/svg/Search.svg"
+              id="search-icon"
+              class="text-secondary1 w-[24px] h-[24px] cursor-pointer mr-[2px]"
+            />
+            <input
+              type="text"
+              id="search-input"
+              class="w-0 text-[#BF93C0] bg-icon border-none outline-none text-sm font-IranYekanL"
+              placeholder="جستجو..."
+            />
+          </div>
+          <!--End Search erea-->
+        </div>
+        <!--End Navbar rightside-->
+
+        <!--Start Navbar leftside-->
+        <div class="left">
+          <ul class="flex gap-x-[16px]">
+            <li>
+              <a
+                href="tel:09934003450"
+                class="w-[44px] h-[44px] p-[10px] text-secondary1 bg-icon rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
+                ><img src="./media/svg/Phone.svg" class="w-[24px] h-[24px]"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-[40px] h-[40px] md:w-[44px] md:h-[44px] p-[10px] text-secondary1 bg-icon rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+                ><img
+                  src="./media/svg/Basket.svg"
+                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="./login.html"
+                class="w-[40px] h-[40px] md:w-[44px] md:h-[44px] p-[10px] text-secondary1 bg-icon rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+                ><img
+                  src="./media/svg/User, Profile.svg"
+                  class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!--End Navbar leftside-->
+      </div>
+      <!--End Top navbar-->
+
+      <!--Start Menu-->
+      <div
+        class="menu hidden md:block h-[40px] px-[20px] md:px-[50px] font-IranYekanN"
+      >
+        <ul class="flex gap-x-[16px] text-sm text-secondary1">
+          <a href="#" class="flex justify-center items-center h-[40px]">
+            <li>نقاشی</li>
+          </a>
+          <a href="#" class="flex justify-center items-center h-[40px]">
+            <li>دسته بندی 2</li>
+          </a>
+          <a href="#" class="flex justify-center items-center h-[40px]">
+            <li>ااااا</li>
+          </a>
+          <a href="#" class="flex justify-center items-center h-[40px]">
+            <li>تماس با ما</li>
+          </a>
+          <a href="#" class="flex justify-center items-center h-[40px]">
+            <li>درباره ما</li>
+          </a>
+        </ul>
+      </div>
+      <!--End Menu-->
+    </nav>
+    <!--End Navbar-->
+
+    <!--Start Body-->
+    <div
+      class="md:container w-[85%] md:mt-[124px] mt-[80px] mx-auto flex flex-col items-center md:gap-[35px] gap-[20px]"
+    >
+      <!--Start First Slider-->
+      <div
+        class="md:w-[80%] w-full xl:h-[380px] md:h-[280px] h-[180px] bg-primary1 rounded-[32px] shadow-lg"
+      >
+        <div class="swiper mySwiper1 slider1 w-full h-full group">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./media/purple cloud.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div
+            class="swiper-button-next w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+          >
+            <img src="./media/svg/Left.svg" alt="" />
+          </div>
+          <div
+            class="swiper-button-prev w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+          >
+            <img src="./media/svg/Right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--End First Slider-->
+
+      <!--Start Category-->
+      <div
+        class="md:w-[80%] w-full md:h-[230px] sm:h-[150px] h-[130px] bg-primary1 rounded-[32px] md:p-[24px] p-[15px] flex flex-col justify-between md:gap-[24px] shadow-lg"
+      >
+        <p class="text-center md:text-2xl text-lg font-bold">
+          دسته بندی محصولات
+        </p>
+
+        <div class="flex flex-wrap justify-around md:text-lg text-sm">
+          <a
+            href="./product-page.html"
+            class="relative md:w-[120px] md:h-[120px] sm:w-[75px] sm:h-[75px] w-[60px] h-[60px]"
+          >
+            <img
+              src="./media/purple.png"
+              alt=""
+              class="w-full h-full md:rounded-[24px] rounded-[18px]"
+            />
+            <span class="T-category absolute top-[50%] right-[50%] text-icon">
+              نقاشی
+            </span>
+            <div
+              class="w-full h-full H-category absolute top-0 md:rounded-[24px] rounded-[18px]"
+            ></div>
+          </a>
+
+          <a
+            href="#"
+            class="relative md:w-[120px] md:h-[120px] sm:w-[75px] sm:h-[75px] w-[60px] h-[60px]"
+          >
+            <img
+              src="./media/purple.png"
+              alt=""
+              class="w-full h-full md:rounded-[24px] rounded-[18px] z-0"
+            />
+            <span
+              class="T-category absolute top-[50%] right-[50%] text-icon z-20"
+            >
+              استیکر
+            </span>
+            <div
+              class="w-full h-full H-category z-10 absolute top-0 md:rounded-[24px] rounded-[18px]"
+            ></div>
+          </a>
+
+          <a
+            href="#"
+            class="relative md:w-[120px] md:h-[120px] sm:w-[75px] sm:h-[75px] w-[60px] h-[60px]"
+          >
+            <img
+              src="./media/purple.png"
+              alt=""
+              class="w-full h-full md:rounded-[24px] rounded-[18px] z-0"
+            />
+            <span
+              class="T-category absolute top-[50%] right-[50%] text-icon z-20"
+            >
+              شمع
+            </span>
+            <div
+              class="w-full h-full H-category z-10 absolute top-0 md:rounded-[24px] rounded-[18px]"
+            ></div>
+          </a>
+
+          <a
+            href="#"
+            class="relative md:w-[120px] md:h-[120px] sm:w-[75px] sm:h-[75px] w-[60px] h-[60px]"
+          >
+            <img
+              src="./media/purple.png"
+              alt=""
+              class="w-full h-full md:rounded-[24px] rounded-[18px] z-0"
+            />
+            <span
+              class="T-category absolute top-[50%] right-[50%] text-icon z-20"
+            >
+              لوازم‌هنری
+            </span>
+            <div
+              class="w-full h-full H-category z-10 absolute top-0 md:rounded-[24px] rounded-[18px]"
+            ></div>
+          </a>
+        </div>
+      </div>
+      <!--End Category-->
+
+      <!--Start Suggestion-->
+      <section
+        class="suggestion md:w-[80%] w-full bg-menu rounded-[32px] p-[20px] shadow-lg font-IranYekanN"
+      >
+        <div
+          class="swiper mySwiper2 slider2 w-full h-full group rounded-[26px] flex"
+        >
+          <div class="swiper-wrapper h-[390px]" id="swiper-wrapper"></div>
+
+          <div
+            class="swiper-button-next w-[40px] h-[40px] absolute bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+          >
+            <img src="./media/svg/Left.svg" alt="" />
+          </div>
+          <div
+            class="swiper-button-prev w-[40px] h-[40px] absolute bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+          >
+            <img src="./media/svg/Right.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!--End Suggestion-->
+
+      <!--Start Commission-->
+      <div
+        class="md:w-[80%] w-full bg-primary1 rounded-[32px] p-[20px] md:p-[24px] shadow-lg flex items-center gap-[20px] flex-col"
+      >
+        <h3 class="commission md:text-2xl text-lg font-bold">سفارش نقاشی</h3>
+        <div
+          class="flex justify-around items-center gap-[24px] lg:flex-row flex-col"
+        >
+          <div
+            class="lg:w-[690px] w-full flex flex-col items-center lg:gap-y-[34px] gap-y-[25px] order-2 lg:order-1"
+          >
+            <p class="text-[15px] text-justify p-[20px] leading-[30px]">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایان
+            </p>
+            <div
+              class="w-full flex lg:justify-end items-center lg:flex-row flex-col gap-[20px]"
+            >
+              <div>
+                <a
+                  href="#"
+                  class="py-[8px] px-[16px] rounded-[16px] bg-secondary1 hover:bg-hover text-icon font-IranYekanL border hover:border-secondary1 text-[14px] shadow-[20px]"
+                  >سفارش نقاشی</a
+                >
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="py-[8px] px-[16px] rounded-[16px] border hover:border-secondary1 bg-primary1 hover:bg-hover text-secondary1 hover:text-icon text-[14px] shadow-xl"
+                  >درخواست مشاوره</a
+                >
+              </div>
+            </div>
+          </div>
+          <img
+            src="./media/Logo-Final.png"
+            class="lg:w-[410px] lg:h-[390px] md:w-[310px] md:h-[290px] w-[220px] h-[200px] bg-menu rounded-2xl order-1 lg:order-2"
+          />
+        </div>
+      </div>
+      <!--End Commission-->
+
+      <!--Start Third Slider-->
+      <div
+        class="md:w-[80%] w-full xl:h-[380px] md:h-[280px] h-[180px] bg-primary1 rounded-[32px] shadow-lg"
+      >
+        <div class="swiper mySwiper1 slider1 w-full h-full group">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">slider 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div
+            class="swiper-button-next w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+          >
+            <img src="./media/svg/Left.svg" alt="" />
+          </div>
+          <div
+            class="swiper-button-prev w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+          >
+            <img src="./media/svg/Right.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--End Third Slider-->
+
+      <!--Start Options-->
+      <div
+        class="md:w-[80%] w-full flex lg:flex-row flex-col justify-between rounded-[32px] lg:gap-[8px] gap-[15px]"
+      >
+        <div
+          class="flex justify-around text-center grow lg:gap-[8px] gap-[15px]"
+        >
+          <div
+            class="lg:w-[200px] w-[170px] lg:h-[150px] h-[110px] flex flex-col gap-[10px] lg:gap-[24px] justify-center items-center bg-primary1 rounded-[32px] shadow-lg"
+          >
+            <img src="./media/svg/Checkmark.svg" alt="" />
+            <span class="lg:text-base text-sm">ضمانت کیفیت کالا</span>
+          </div>
+
+          <div
+            class="lg:w-[200px] w-[170px] lg:h-[150px] h-[110px] flex flex-col gap-[10px] lg:gap-[24px] justify-center items-center bg-primary1 rounded-[32px] shadow-lg"
+          >
+            <img src="./media/svg/box-pin-location.svg" alt="" />
+            <span class="lg:text-base text-sm">ارسال به سراسر کشور</span>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-around text-center flex-grow lg:gap-[8px] gap-[15px]"
+        >
+          <div
+            class="lg:w-[200px] w-[170px] lg:h-[150px] h-[110px] flex flex-col gap-[10px] lg:gap-[24px] justify-center items-center bg-primary1 rounded-[32px] shadow-lg"
+          >
+            <img src="./media/svg/Fast.svg" alt="" />
+            <span class="lg:text-base text-sm">ارسال سریع محصولات</span>
+          </div>
+
+          <div
+            class="lg:w-[200px] w-[170px] lg:h-[150px] h-[110px] p-[15px] flex flex-col gap-[10px] lg:gap-[24px] justify-center items-center bg-primary1 rounded-[32px] shadow-lg"
+          >
+            <img src="./media/svg/Check.svg" alt="" />
+            <span class="lg:text-base text-sm">پرداخت ایمن و آسان</span>
+          </div>
+        </div>
+      </div>
+      <!--End Options-->
+
+      <!--Start FAQ-->
+      <div
+        class="md:w-[80%] w-full p-[20px] md:p-[24px] flex flex-col rounded-[32px] lg:gap-[24px] gap-[20px] bg-menu font-IranYekanN shadow-lg mb-[35px]"
+      >
+        <p class="lg:text-xl text-lg text-center font-semibold">
+          سوالات پرتکرار
+        </p>
+        <div id="accordionExample" class="flex flex-col gap-[20px]">
+          <div
+            class="border border-hover bg-primary1 rounded-t-lg rounded-b-lg shadow-lg"
+          >
+            <h2 class="mb-0" id="headingOne">
+              <button
+                class="group text-start flex w-full items-center justify-between px-5 py-3 rounded-t-lg rounded-b-lg text-[15px] md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                سفارش ها کی ارسال میشن؟
+                <span
+                  class="float-left h-5 w-5 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingOne"
+              data-te-parent="#accordionExample"
+            >
+              <div class="px-5 py-4 bg-menu text-[15px] leading-9 rounded-b-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایوان امید داشت که
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-hover bg-primary1 rounded-t-lg rounded-b-lg shadow-lg"
+          >
+            <h2 class="mb-0" id="headingTwo">
+              <button
+                class="group text-start flex w-full items-center justify-between px-5 py-3 rounded-t-lg rounded-b-lg text-[15px] md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                سفارش ها چند روزه میرسن؟
+                <span
+                  class="mr-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingTwo"
+              data-te-parent="#accordionExample"
+            >
+              <div class="px-5 py-4 bg-menu text-[15px] leading-9 rounded-b-lg">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایوان امید داشت که
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-b-lg rounded-t-lg border border-hover bg-primary1 shadow-lg"
+          >
+            <h2 class="accordion-header mb-0" id="headingThree">
+              <button
+                class="group text-start flex w-full items-center justify-between rounded-b-lg rounded-t-lg px-5 py-3 text-[15px] md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                type="button"
+                data-te-collapse-init
+                data-te-collapse-collapsed
+                data-te-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                میشه نقاشی با طرح دلخواه سفارش بدیم؟
+                <span
+                  class="mr-auto text-end h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="!visible hidden"
+              data-te-collapse-item
+              aria-labelledby="headingThree"
+              data-te-parent="#accordionExample"
+            >
+              <div
+                class="px-5 py-4 bg-menu rounded-b-lg rounded-t-lg text-[15px] leading-9"
+              >
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی تفاده قرار گیرد.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End FAQ-->
+    </div>
+    <!--End Body-->
+
+    <!--Start Footer-->
+    <div
+      class="w-full rounded-t-[32px] p-[24px] pb-[12px] bg-primary1 flex md:flex-row flex-col justify-between gap-[20px] md:text-base text-sm"
+    >
+      <div class="flex flex-col gap-3">
+        <a href="#" class="hover:text-hover">درباره ما</a>
+        <a href="#" class="hover:text-hover">تماس با ما</a>
+      </div>
+      <div class="flex flex-col gap-3 md:items-end items-center">
+        <div class="flex gap-4">
+          <a
+            href="https://t.me/Mh_zvr"
+            class="w-[48px] h-[48px] text-secondary1 bg-footer rounded-[10px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+            ><img src="./media/svg/Telegram.svg" />
+          </a>
+
+          <a
+            href="https://instagram.com/skumring_land"
+            class="w-[48px] h-[48px] text-secondary1 bg-footer rounded-[10px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+            ><img src="./media/svg/Instagram.svg" />
+          </a>
+
+          <a
+            href="#"
+            class="w-[48px] h-[48px] text-secondary1 bg-footer rounded-[10px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+            ><img src="./media/svg/Whatsapp.svg" />
+          </a>
+        </div>
+        <a
+          href="tel:09934003450"
+          class="text-base flex gap-2 hover:text-hover font-IranYekanN"
+        >
+          09934003450<img src="./media/svg/Phone.svg" />
+        </a>
+      </div>
+    </div>
+    <!--Start Coptright-->
+    <div
+      class="w-full h-9 bg-footer text-hover text-sm flex justify-center items-center"
+    >
+      &#169; کلیه حقوق این سایت متعلق به (فروشگاه اینترنتی آرورا) می‌باشد
+    </div>
+    <!--End Coptright-->
+    <!--End Footer-->
+
+    <script
+      type="text/javascript"
+      src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+    ></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

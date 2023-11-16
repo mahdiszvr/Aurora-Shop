@@ -1,0 +1,22 @@
+@font-face {
+    font-family: IRANyekan;
+    src: url(../media/font/IRANYekanX-Medium.woff2);
+    font-weight: 500;
+}
+@font-face {
+    font-family: IRANyekanL;
+    src: url(../media/font/IRANYekanX-Light.woff2);
+    font-weight: 300;
+}
+@font-face {
+    font-family: IRANyekanN;
+    src: url(../media/font/IRANYekanXFaNum-Medium.woff2);
+}
+@font-face {
+    font-family: ANANDA;
+    src: url(../media/font/Ananda\ Black.woff2);
+}
+@font-face {
+    font-family: LalehZar;
+    src: url(../media/font/Lalezar-Regular_p30download.com.ttf);
+}

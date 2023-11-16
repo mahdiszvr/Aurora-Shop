@@ -1,0 +1,101 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "category": "نقاشی",
+      "name": "نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/watercolor.png"
+    },
+    {
+      "id": 2,
+      "category": "نقاشی",
+      "name": "2نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/watercolor.png"
+    },
+    {
+      "id": 3,
+      "img": "./media/watercolor.png"
+    }
+  ],
+  "suggest": [
+    {
+      "id": 1,
+      "title": "suggest",
+      "category": "نقاشی",
+      "name": "1نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/SaihQalam-Gol.jpg",
+      "hover": "./media/Logo.png"
+    },
+    {
+      "id": 2,
+      "title": "suggest",
+      "category": "نقاشی",
+      "name": "2نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/SaihQalam-Gol.jpg",
+      "hover": "./media/Logo.png"
+    },
+    {
+      "id": 3,
+      "title": "suggest",
+      "category": "نقاشی",
+      "name": "3نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/SaihQalam-Gol.jpg",
+      "hover": "./media/Logo.png"
+    },
+    {
+      "id": 4,
+      "title": "suggest",
+      "category": "نقاشی",
+      "name": "4نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/SaihQalam-Gol.jpg",
+      "hover": "./media/Logo.png"
+    },
+    {
+      "id": 5,
+      "title": "suggest",
+      "category": "نقاشی",
+      "name": "5نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/SaihQalam-Gol.jpg",
+      "hover": "./media/Logo.png"
+    },
+    {
+      "id": 6,
+      "title": "suggest",
+      "category": "نقاشی",
+      "name": "6نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/SaihQalam-Gol.jpg",
+      "hover": "./media/Logo.png"
+    }
+  ],
+  "account": [
+    {
+      "id": 1,
+      "firstName": "yg",
+      "lastName": "yg",
+      "phone": "09109090987",
+      "password": "yg123"
+    },
+    {
+      "id": 2,
+      "firstName": "mahdis",
+      "lastName": "mahdis",
+      "phone": "09105948942",
+      "password": "m123"
+    },
+    {
+      "firstName": "Mahdis",
+      "lastName": "Zavvar",
+      "phone": "09105948940",
+      "password": "m1234",
+      "id": 3
+    }
+  ]
+}

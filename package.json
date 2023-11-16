@@ -1,0 +1,23 @@
+{
+  "name": "aurora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "server": "json-server --watch db.json --port 3007"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "json-server": "^0.17.4",
+    "live-server": "^1.2.2",
+    "swiper": "^11.0.4",
+    "tw-elements": "^1.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

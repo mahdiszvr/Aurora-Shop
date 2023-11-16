@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+body {
+  background-color: #faeaff;
+}
+a {
+  text-decoration: none;
+}
+
+/*Start Navbar*/
+.active-searchBar {
+  width: 250px;
+  transition: all 300ms linear;
+}
+.active-searchInput {
+  width: 180px;
+  transition: all 400ms linear;
+}
+.border-searchBar {
+  outline: 1px solid gray;
+}
+div.H-Menu {
+  width: 100vw !important;
+  height: 100vh !important;
+  top: 0;
+  z-index: 999;
+}
+nav > div.H-Menu > ul > div > * {
+  border-bottom: 1px solid #5700633b;
+}
+nav > div.H-Menu > ul > div > li:nth-of-type(1) {
+  border: unset !important;
+}
+div#search-navbar2 {
+  border: 1px solid gray;
+}
+/*End Navbar*/
+
+/*Start Category*/
+div.H-category {
+  background-color: rgba(0, 0, 0, 0.454);
+  z-index: 10 !important;
+}
+div.H-category:hover {
+  background-color: rgba(0, 0, 0, 0.648);
+}
+span.T-category {
+  transform: translate(50%, -50%);
+  z-index: 20 !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+
+  object-fit: cover;
+}
+
+div.category .swiper-button-prev {
+  right: 40px !important;
+}
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  color: #580063 !important;
+  display: none;
+}
+div.category .swiper-button-next {
+  right: 90px !important;
+}
+.swiper-button-next::after {
+  font-size: 20px !important;
+  color: #580063 !important;
+  display: none;
+}
+/*End Category*/
+
+/*Start Seggestion*/
+section .swiper-button-next {
+  right: 80px !important;
+}
+section .swiper-button-prev {
+  right: 30px !important;
+}
+/*End Seggestion*/
+
+.FAQ-active {
+  height: auto;
+  transition: all 300ms linear;
+}
+.FAQ-P {
+  display: block;
+}
+
+.img-s {
+  height: 270px !important;
+}
+
+section .swiper-button-prev {
+  top: 365px !important;
+}
+section .swiper-button-next {
+  top: 365px !important;
+}
+section .swiper-slide {
+  width: auto !important;
+  height: 390px !important;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add {
+  left: 12px;
+  border-bottom-right-radius: 8px;
+  transition: all 300ms linear;
+}
+.add:hover{
+  background-color: #580063;
+  color: #faeaff;
+}
+.add:hover p > img{
+  color: #faeaff !important;
+}
+a.addHover:hover  div.add {
+  width: 200px;
+}
+.addHover:hover div.add  p {
+  width: auto;
+  opacity: 1;
+}
+.addHover:hover div.add > img {
+  opacity: 0;
+}

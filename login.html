@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود</title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/login-signin.css" />
+  </head>
+  <body class="font-IranYekan text-secondary1">
+    <!--Start Top navbar-->
+    <div
+      class="w-full h-[64px] bg-nav px-[20px] md:px-[50px] rounded-b-[24px] flex items-center justify-between absolute top-0"
+    >
+      <!--Start Search erea-->
+      <div
+        id="search-navbar"
+        class="serach w-[44px] h-[44px] px-[8px] flex items-center md:gap-x-[10px] bg-icon rounded-[16px]"
+      >
+        <img
+          src="./media/svg/Search.svg"
+          id="search-icon"
+          class="text-secondary1 w-[24px] h-[24px] cursor-pointer mr-[2px]"
+        />
+        <input
+          type="text"
+          id="search-input"
+          class="w-0 text-[#BF93C0] bg-icon border-none outline-none text-sm font-IranYekanL"
+          placeholder="جستجو..."
+        />
+      </div>
+      <!--End Search erea-->
+
+      <!--Start Logo-->
+      <a
+        href="./index.html"
+        class="logo h-[44px] flex items-center gap-x-[10px] absolute left-1/2"
+      >
+        <img
+          src="./media/Logo-Final.png"
+          class="w-[40px] h-[40px] md:w-[44px] md:h-[44px]"
+        />
+        <span class="text-lg md:text-2xl text-secondary1 font-Ananda"
+          >Aurora</span
+        >
+      </a>
+      <!--End Logo-->
+
+      <!--Start phone button-->
+      <a
+        href="tel:09934003450"
+        class="w-[44px] h-[44px] p-[10px] text-secondary1 bg-icon rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
+        ><img src="./media/svg/Phone.svg" class="w-[24px] h-[24px]" />
+      </a>
+      <!--End phone button-->
+    </div>
+    <!--End Top navbar-->
+
+    <!--Start crumb-->
+    <nav class="flex absolute top-20 right-10" aria-label="Breadcrumb">
+      <ol
+        class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+      >
+        <li class="inline-flex items-center">
+          <a
+            href="./index.html"
+            class="me-1 inline-flex items-center text-sm font-medium hover:text-hover text-secondary1"
+          >
+            <img src="./media/Home-icon.svg.png" class="w-3 h-3 me-2" />
+            خانه
+          </a>
+        </li>
+        <li aria-current="page">
+          <div class="flex items-center">
+            <img src="./media/svg/Left.svg" class="w-4 h-4" />
+            <span
+              class="ms-1 text-sm font-medium text-secondary1 md:ms-2"
+              >ورود به سایت</span
+            >
+          </div>
+        </li>
+      </ol>
+    </nav>
+    <!--End crumb-->
+
+    <!--Start log in area-->
+    <div
+      class="flex items-center justify-center md:h-screen mt-[120px] md:mt-0"
+    >
+      <!--Start Log in Section-->
+      <div
+        class="login md:!w-[370px] w-full mx-4 md:mx-0 bg-primary1 rounded-lg shadow md:mt-0 p-4 flex flex-col gap-4 relative"
+      >
+        <h1 class="text-xl font-semibold md:text-2xl text-center">
+          ورود به سایت
+        </h1>
+        <section class="flex flex-col gap-3 p-3" action="#">
+          <label for="email" class="text-sm font-medium">شماره موبایل:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            class="bg-icon border border-hover text-sm rounded-lg focus:border-secondary1 w-full p-2.5"
+            pattern="[0-9]{11}"
+            placeholder="شماره موبایل خود را وارد کنید"
+            required=""
+          />
+
+          <div class="flex justify-between text-sm font-medium">
+            <label for="password">رمز عبور:</label>
+            <a
+              href="#"
+              class="text-hover forgot hover:text-secondary1 transition-all duration-200 ease-linear"
+              >فراموشی رمز عبور</a
+            >
+          </div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="رمز عبور خود را وارد کنید"
+            class="bg-icon border border-hover text-sm rounded-lg focus:border-secondary1 w-full p-2.5"
+            required=""
+          />
+          <i
+            class="fa-regular fa-eye-slash show absolute cursor-pointer"
+            id="showL"
+          ></i>
+
+          <!--Start Remember Me-->
+          <label class="flex items-center gap-1 text-sm">
+            <input type="checkbox" id="remember" class="!accent-hover" /> مرا به
+            خاطر بسپار</label
+          >
+          <!--End Remember Me-->
+
+          <!--Start Captcha-->
+          <div class="h-9 flex justify-between font-IranYekanN">
+            <input
+              type="text"
+              id="text"
+              class="p-1 px-2 rounded-lg border border-hover text-sm bg-icon"
+              placeholder="کد امنیتی"
+            />
+            <div
+              class="captcha flex p-1 bg-icon border border-hover rounded-lg"
+            >
+              <div
+                id="num"
+                class="grow font-IranYekanN flex items-center justify-center"
+              ></div>
+              <div class="flex items-center justify-center">
+                <button id="refresh">
+                  <i class="fa-solid fa-rotate-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--End Captcha-->
+
+          <!--Start submit log in-->
+          <button
+            type="submit"
+            id="login"
+            class="submit w-full h-10 text-icon border outline hover:outline-0 font-medium rounded-lg text-sm px-5 py-2.5 text-center my-3"
+          >
+            ورود
+          </button>
+          <!--End submit log in-->
+
+          <!--Start sign in part-->
+          <p class="text-sm font-light flex justify-evenly">
+            <span> کاربر جدید هستید؟ </span>
+            <a
+              href="./signin.html"
+              class="font-medium hover:text-secondary1 text-hover"
+              >ایجاد حساب کاربری</a
+            >
+          </p>
+          <!--End sign in part-->
+        </section>
+      </div>
+      <!--End Log in Section-->
+    </div>
+    <!--End log in area-->
+
+    <!--Start Coptright-->
+    <div
+      class="w-full h-9 bg-footer text-hover text-sm text-center flex justify-center items-center absolute bottom-0"
+    >
+      &#169; کلیه حقوق این سایت متعلق به (فروشگاه اینترنتی آرورا) می‌باشد.
+    </div>
+    <!--End Coptright-->
+
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
