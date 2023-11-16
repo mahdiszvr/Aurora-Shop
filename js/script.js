@@ -39,6 +39,8 @@ var swiper = new Swiper(".mySwiper1", {
   },
 });
 
+swiper.slideTO()
+
 // Second slider
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: "auto",

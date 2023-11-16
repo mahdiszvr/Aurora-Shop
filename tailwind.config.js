@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}" , "./node_modules/tw-elements/dist/js/**/*.js"],
+  content: ["./*.html" , "./node_modules/tw-elements/dist/js/*.js","./js/*.js"],
   theme: {
     extend: {},
+    presets: [],
     fontFamily: {
       IranYekan: ["IRANyekan"],
       IranYekanL: ["IRANyekanL"],
