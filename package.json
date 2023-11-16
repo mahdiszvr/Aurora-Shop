@@ -1,7 +1,7 @@
 {
   "name": "aurora",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"# Aurora-Shop\" \r \"# Aurora-Shop\"",
   "main": "index.js",
   "scripts": {
     "tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
@@ -19,5 +19,13 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahdiszvr/Aurora-Shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahdiszvr/Aurora-Shop/issues"
+  },
+  "homepage": "https://github.com/mahdiszvr/Aurora-Shop#readme"
 }
