@@ -7,6 +7,10 @@
 body {
   background-color: #faeaff;
 }
+a {
+  text-decoration: none;
+}
+
 /*Start Navbar*/
 .active-searchBar {
   width: 250px;
@@ -18,9 +22,6 @@ body {
 }
 .border-searchBar {
   outline: 1px solid gray;
-}
-a.logo {
-  transform: translateX(-50%);
 }
 div.H-Menu {
   width: 100vw !important;
@@ -37,31 +38,28 @@ nav > div.H-Menu > ul > div > li:nth-of-type(1) {
 div#search-navbar2 {
   border: 1px solid gray;
 }
+/*End Navbar*/
 
-/*login*/
-label > input {
-  accent-color: #57006369;
-}
-button.submit {
-  background-color: #57006369 !important;
-  transition: all 200ms linear;
-  outline: 2px solid #57006369;
-  border: 1px solid #faeafb;
-}
-button.submit:hover {
-  background-color: #580063 !important;
-  outline-color: #580063;
-}
-.show {
-  top: 208px;
-  left: 40px;
-}
-.captcha {
-  width: 80px;
+/*Product Count*/
+
+.product-count {  
+  height: 30px;
 }
 
-/*sign in*/
-.show2 {
-  top: 378px;
-  left: 40px;
+.product-count a {
+  font-weight: 700;
+  color: black;
+}
+
+.button-count:active {
+  background-color: #57006369;
+}
+
+.number-product {
+  border: 1px solid silver;
+ 
+}
+
+:disabled {
+  background-color: silver;
 }

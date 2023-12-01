@@ -1,78 +1,155 @@
 {
-  "posts": [
+  "paintings": [
+    
     {
       "id": 1,
-      "category": "نقاشی",
-      "name": "نقاشی آبرنگ",
+      "category": "آبرنگ",
+      "name": "3نقاشی آبرنگ",
       "price": "288,000",
-      "img": "./media/watercolor.png"
+      "img": "./media/Abrang/kooki-butter.jpg",
+      "hover": "./media/Abrang/kooki-butter.jpg",
+      "idN":"kooki"
     },
     {
       "id": 2,
-      "category": "نقاشی",
+      "category": "آبرنگ",
       "name": "2نقاشی آبرنگ",
       "price": "288,000",
-      "img": "./media/watercolor.png"
+      "img": "./media/Abrang/Butterfly-main.jpg",
+      "hover": "./media/Abrang/Butterfly.jpg",
+      "idN":"Butterfly"
     },
     {
       "id": 3,
-      "img": "./media/watercolor.png"
+      "category": "راپید",
+      "name": "1نقاشی راپید",
+      "price": "288,000",
+      "img": "./media/Khodkar/Angel-hover.jpg",
+      "hover": "./media/Khodkar/Angel-main.jpg",
+      "idN":"Angel"
+    },
+    {
+      "id": 4,
+      "category": "راپید",
+      "name": "2نقاشی راپید",
+      "price": "288,000",
+      "img": "./media/Khodkar/girl-with-skirt.jpg",
+      "hover": "./media/Khodkar/girl-with-skirt.jpg",
+      "idN":"girl-with-skirt"
+    },
+    {
+      "id": 5,
+      "category": "مدادرنگی",
+      "name": "1نقاشی مدادرنگی",
+      "price": "288,000",
+      "img": "./media/MedadRangi/bird.jpg",
+      "hover": "./media/MedadRangi/bird.jpg",
+      "idN":"bird"
+    },
+    {
+      "id": 6,
+      "category": "مدادرنگی",
+      "name": "2نقاشی مدادرنگی",
+      "price": "288,000",
+      "img": "./media/MedadRangi/Darya.jpg",
+      "hover": "./media/MedadRangi/Darya.jpg",
+      "idN":"Darya"
+    },
+    {
+      "id": 7,
+      "category": "سیاه‌قلم",
+      "name": "1نقاشی سیاه‌قلم",
+      "price": "288,000",
+      "img": "./media/Siah-Qalam/Gol.jpg",
+      "hover": "./media/Siah-Qalam/Gol.jpg",
+      "idN":"Gol"
+    },
+    {
+      "id": 8,
+      "category": "سیاه‌قلم",
+      "name": "2نقاشی سیاه‌قلم",
+      "price": "288,000",
+      "img": "./media/Siah-Qalam/Matin.jpg",
+      "hover": "./media/Siah-Qalam/Matin.jpg",
+      "idN":"Matin"
+    },
+    {
+      "id": 9,
+      "category": "سیاه‌قلم",
+      "name": "3نقاشی سیاه‌قلم",
+      "price": "288,000",
+      "img": "./media/Siah-Qalam/gorbeh.jpg",
+      "hover": "./media/Siah-Qalam/gorbeh.jpg",
+      "idN":"gorbeh"
+    },
+    {
+      "id": 10,
+      "category": "آبرنگ",
+      "name": "1نقاشی آبرنگ",
+      "price": "288,000",
+      "img": "./media/Abrang/au.jpg",
+      "hover": "./media/Abrang/au-hover.jpg",
+      "idN":"au"
     }
   ],
   "suggest": [
     {
       "id": 1,
-      "title": "suggest",
-      "category": "نقاشی",
+      "category": "آبرنگ",
       "name": "1نقاشی آبرنگ",
       "price": "288,000",
-      "img": "./media/SaihQalam-Gol.jpg",
-      "hover": "./media/Logo.png"
+      "img": "./media/Abrang/au.jpg",
+      "hover": "./media/Abrang/au-hover.jpg"
     },
+
     {
       "id": 2,
-      "title": "suggest",
-      "category": "نقاشی",
-      "name": "2نقاشی آبرنگ",
+      "category": "سیاه‌قلم",
+      "name": "1نقاشی سیاه‌قلم",
       "price": "288,000",
-      "img": "./media/SaihQalam-Gol.jpg",
-      "hover": "./media/Logo.png"
+      "img": "./media/Siah-Qalam/Gol.jpg",
+      "hover": "./media/Siah-Qalam/Gol.jpg"
     },
+
     {
       "id": 3,
-      "title": "suggest",
-      "category": "نقاشی",
-      "name": "3نقاشی آبرنگ",
+      "category": "راپید",
+      "name": "2نقاشی راپید",
       "price": "288,000",
-      "img": "./media/SaihQalam-Gol.jpg",
-      "hover": "./media/Logo.png"
+      "img": "./media/Khodkar/girl-with-skirt.jpg",
+      "hover": "./media/Khodkar/girl-with-skirt.jpg"
     },
     {
       "id": 4,
-      "title": "suggest",
-      "category": "نقاشی",
-      "name": "4نقاشی آبرنگ",
+      "category": "سیاه‌قلم",
+      "name": "3نقاشی سیاه‌قلم",
       "price": "288,000",
-      "img": "./media/SaihQalam-Gol.jpg",
-      "hover": "./media/Logo.png"
+      "img": "./media/Siah-Qalam/gorbeh.jpg",
+      "hover": "./media/Siah-Qalam/gorbeh.jpg"
     },
     {
       "id": 5,
-      "title": "suggest",
-      "category": "نقاشی",
-      "name": "5نقاشی آبرنگ",
+      "category": "مدادرنگی",
+      "name": "2نقاشی مدادرنگی",
       "price": "288,000",
-      "img": "./media/SaihQalam-Gol.jpg",
-      "hover": "./media/Logo.png"
+      "img": "./media/MedadRangi/Darya.jpg",
+      "hover": "./media/MedadRangi/Darya.jpg"
     },
     {
       "id": 6,
-      "title": "suggest",
-      "category": "نقاشی",
-      "name": "6نقاشی آبرنگ",
+      "category": "آبرنگ",
+      "name": "2نقاشی آبرنگ",
       "price": "288,000",
-      "img": "./media/SaihQalam-Gol.jpg",
-      "hover": "./media/Logo.png"
+      "img": "./media/Abrang/Butterfly-main.jpg",
+      "hover": "./media/Abrang/Butterfly.jpg"
+    },
+    {
+      "id": 7,
+      "category": "راپید",
+      "name": "1نقاشی راپید",
+      "price": "288,000",
+      "img": "./media/Khodkar/Angel-hover.jpg",
+      "hover": "./media/Khodkar/Angel-main.jpg"
     }
   ],
   "account": [

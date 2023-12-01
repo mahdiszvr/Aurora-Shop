@@ -6,7 +6,10 @@
     <title>Aurora Shop</title>
     <link rel="shortcut icon" type="image/x-icon" href="./media/Logo-Final.png" />
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+<<<<<<< HEAD
+=======
     <link rel="stylesheet" href="./node_modules/tw-elements/dist/css/tw-elements.min.css" />
+>>>>>>> 0e617396a8eab46aecc696ebcae8b52a1891105c
     <link rel="stylesheet" href="./dist/output.css" />
     <link rel="stylesheet" href="./css/custom.css" />
     
@@ -15,10 +18,11 @@
     <!--Start Navbar-->
     <nav
       class="w-full h-[64px] md:h-[104px] bg-menu rounded-b-[24px] fixed top-0 z-[800] shadow-lg"
+      id="nav"
     >
       <!--Start Hamburger Menu-->
       <div
-        class="H-Menu absolute font-normal bg-menu text-sm md:text-md font-IranYekanN"
+        class="H-Menu absolute !top-0 h-screen font-normal bg-menu text-sm md:text-md font-IranYekanN"
       >
         <ul class="h-full flex flex-col justify-between">
           <div class="li flex flex-col">
@@ -46,7 +50,7 @@
             >
               <div
                 id="search-navbar2"
-                class="serach w-[80%] h-[38px] px-[8px] flex items-center gap-x-[8px] bg-icon rounded-[16px]"
+                class="serach w-[80%] h-[38px] px-[8px] flex items-center gap-x-[8px] bg-footer rounded-[16px]"
               >
                 <img
                   src="./media/svg/Search.svg"
@@ -56,7 +60,7 @@
                 <input
                   type="text"
                   id="search-input2"
-                  class="w-[180px] text-[#BF93C0] bg-icon border-none outline-none text-sm font-IranYekanL"
+                  class="w-[180px] text-[#BF93C0] bg-footer border-none outline-none text-sm font-IranYekanL"
                   placeholder="جستجو..."
                 />
               </div>
@@ -64,24 +68,158 @@
             <!--End Search erea-->
 
             <!--Start menu-->
-            <a
-              href="#"
-              class="flex justify-center items-center h-[40px] hover:text-hover"
-            >
-              <li>دسته بندی 1</li>
-            </a>
-            <a
-              href="#"
-              class="flex justify-center items-center h-[40px] hover:text-hover"
-            >
-              <li>دسته بندی 2</li>
-            </a>
-            <a
-              href="#"
-              class="flex justify-center items-center h-[40px] hover:text-hover"
-            >
-              <li>دسته بندی 3</li>
-            </a>
+            <div id="accordionExample" class="w-full flex flex-col">
+              <li
+                class="p-3 px-10 border-b border-[#5700633b] flex flex-col justify-center items-center"
+              >
+                <h2
+                  class="w-full mb-0 flex items-center justify-between"
+                  id="headingOne"
+                >
+                  <a
+                    href="./product-page.html"
+                    class="group text-start text-[15px] text-secondary1 hover:text-hover [overflow-anchor:none] hover:z-[2] focus:z-[3]"
+                    id="paint-menu"
+                  >
+                    نقاشی و طراحی
+                  </a>
+                  <span
+                    class="float-left rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-7 w-7 bg-footer p-1 rounded-[50%] hover:text-hover"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="!visible hidden"
+                  data-te-collapse-item
+                  aria-labelledby="headingOne"
+                  data-te-parent="#accordionExample"
+                >
+                  <div
+                    class="px-5 py-1 text-hover text-sm leading-8 rounded-b-lg flex flex-col items-start"
+                  >
+                    <a
+                      href="./product-page.html?Name=Abrang"
+                      id="Abrang"
+                      class="hover:text-secondary1"
+                    >
+                      آبرنگ
+                    </a>
+                    <a
+                      href="./product-page.html?Name=MedadRangi"
+                      id="MedadRangi"
+                      class="hover:text-secondary1"
+                    >
+                      مدادرنگی
+                    </a>
+                    <a
+                      href="./product-page.html?Name=Rapid"
+                      id="Rapid"
+                      class="hover:text-secondary1"
+                    >
+                      خودکار / راپید
+                    </a>
+                    <a
+                      href="./product-page.html?Name=SiahQalam"
+                      id="SiahQalam"
+                      class="hover:text-secondary1"
+                    >
+                      سیاه قلم
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="p-3 px-10 border-b border-[#5700633b] flex flex-col justify-center items-center"
+              >
+                <h2 class="w-full mb-0" id="headingTwo">
+                  <a
+                    href="#"
+                    class="group text-start text-[15px] text-secondary1 hover:text-hover [overflow-anchor:none] hover:z-[2] focus:z-[3]"
+                    id="candle-menu"
+                  >
+                    شمع
+                  </a>
+                </h2>
+              </li>
+              <li
+                class="p-3 px-10 border-b border-[#5700633b] flex flex-col justify-center items-center"
+              >
+                <h2
+                  class="w-full mb-0 flex items-center justify-between"
+                  id="headingThree"
+                >
+                  <a
+                    href="./product-page.html"
+                    class="group text-start text-[15px] text-secondary1 hover:text-hover [overflow-anchor:none] hover:z-[2] focus:z-[3]"
+                    id="sticker-menu"
+                  >
+                    استیکر
+                  </a>
+                  <span
+                    class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 motion-reduce:transition-none"
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-7 w-7 bg-footer p-1 rounded-[50%] hover:text-hover"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                </h2>
+
+                <div
+                  id="collapseThree"
+                  class="!visible hidden"
+                  data-te-collapse-item
+                  aria-labelledby="headingThree"
+                  data-te-parent="#accordionExample"
+                >
+                  <div
+                    class="px-5 py-1 text-hover text-sm leading-8 rounded-b-lg flex flex-col items-start"
+                  >
+                    <button class="hover:text-secondary1">استیکر 1</button>
+                    <button class="hover:text-secondary1">استیکر 2</button>
+                    <button class="hover:text-secondary1">استیکر 3</button>
+                  </div>
+                </div>
+              </li>
+            </div>
+
             <a
               href="#"
               class="flex justify-center items-center h-[40px] hover:text-hover"
@@ -103,7 +241,7 @@
             class="flex justify-center items-center h-[40px] hover:text-hover"
           >
             <li class="flex justify-center items-center gap-x-3">
-              09909009009<img src="./media/svg/Phone.svg" />
+              09934003450<img src="./media/svg/Phone.svg" />
             </li>
           </a>
           <!--End phone-->
@@ -114,12 +252,13 @@
       <!--Start Top navbar-->
       <div
         class="logo h-[64px] bg-nav px-[20px] md:px-[50px] rounded-b-[24px] flex items-center justify-between"
+        id="topnav"
       >
         <!--Start Navbar Right side-->
         <div class="right flex items-center gap-[20px]">
           <!--Start Hamburger Button-->
           <button
-            class="hamburger text-secondary1 text-xl font-semibold w-[40px] h-[40px] md:w-[44px] md:h-[44px] bg-icon rounded-[16px] flex items-center justify-center cursor-pointer hover:bg-hover hover:text-icon transition-all duration-150 ease-linear md:hidden"
+            class="hamburger text-secondary1 text-xl font-semibold w-[40px] h-[40px] md:w-[44px] md:h-[44px] bg-footer rounded-[16px] flex items-center justify-center cursor-pointer hover:bg-hover hover:text-icon transition-all duration-150 ease-linear md:hidden"
           >
             &#9776;
           </button>
@@ -144,7 +283,7 @@
           <!--Start Search erea-->
           <div
             id="search-navbar"
-            class="serach hidden w-[44px] h-[44px] px-[8px] md:flex items-center md:gap-x-[10px] bg-icon rounded-[16px] order-2"
+            class="serach hidden w-[44px] h-[44px] px-[8px] md:flex items-center md:gap-x-[10px] bg-footer rounded-[16px] order-2"
           >
             <img
               src="./media/svg/Search.svg"
@@ -154,7 +293,7 @@
             <input
               type="text"
               id="search-input"
-              class="w-0 text-[#BF93C0] bg-icon border-none outline-none text-sm font-IranYekanL"
+              class="w-0 text-[#BF93C0] bg-footer border-none outline-none text-sm font-IranYekanL"
               placeholder="جستجو..."
             />
           </div>
@@ -168,14 +307,16 @@
             <li>
               <a
                 href="tel:09934003450"
-                class="w-[44px] h-[44px] p-[10px] text-secondary1 bg-icon rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
+                title="تماس با ما"
+                class="w-[44px] h-[44px] p-[10px] text-secondary1 bg-footer rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
                 ><img src="./media/svg/Phone.svg" class="w-[24px] h-[24px]"
               /></a>
             </li>
             <li>
               <a
                 href="#"
-                class="w-[40px] h-[40px] md:w-[44px] md:h-[44px] p-[10px] text-secondary1 bg-icon rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+                title="سبد خرید"
+                class="w-[40px] h-[40px] md:w-[44px] md:h-[44px] p-[10px] text-secondary1 bg-footer rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
                 ><img
                   src="./media/svg/Basket.svg"
                   class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]"
@@ -184,7 +325,8 @@
             <li>
               <a
                 href="./login.html"
-                class="w-[40px] h-[40px] md:w-[44px] md:h-[44px] p-[10px] text-secondary1 bg-icon rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+                title="حساب کاربری"
+                class="w-[40px] h-[40px] md:w-[44px] md:h-[44px] p-[10px] text-secondary1 bg-footer rounded-[16px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
                 ><img
                   src="./media/svg/User, Profile.svg"
                   class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]"
@@ -199,23 +341,58 @@
       <!--Start Menu-->
       <div
         class="menu hidden md:block h-[40px] px-[20px] md:px-[50px] font-IranYekanN"
+        id="menu"
       >
-        <ul class="flex gap-x-[16px] text-sm text-secondary1">
-          <a href="#" class="flex justify-center items-center h-[40px]">
-            <li>نقاشی</li>
-          </a>
-          <a href="#" class="flex justify-center items-center h-[40px]">
-            <li>دسته بندی 2</li>
-          </a>
-          <a href="#" class="flex justify-center items-center h-[40px]">
-            <li>ااااا</li>
-          </a>
-          <a href="#" class="flex justify-center items-center h-[40px]">
-            <li>تماس با ما</li>
-          </a>
-          <a href="#" class="flex justify-center items-center h-[40px]">
-            <li>درباره ما</li>
-          </a>
+        <ul class="ulmenu flex gap-x-7 text-sm text-secondary1">
+          <li class="flex justify-center items-center gap-2 h-[40px]">
+            <span>|</span>
+            دسته‌بندی کلی
+            <span>|</span>
+          </li>
+          <li
+            class="btn group flex justify-center items-center h-10 hover:scale-110 duration-200"
+          >
+            <a href="./product-page.html">نقاشی و طراحی </a>
+            <div
+              class="submenu w-28 h-36 p-2 bg-menu text-[13px] absolute top-9 hidden group-hover:flex flex-col gap-3 items-center shadow-inner"
+            >
+              <h3 class="hover:text-hover">
+                <a href="./product-page.html?Name=Abrang">آبرنگ</a>
+              </h3>
+              <h3 class="hover:text-hover">
+                <a href="./product-page.html?Name=MedadRangi">مدادرنگی</a>
+              </h3>
+              <h3 class="hover:text-hover">
+                <a href="./product-page.html?Name=Rapid">خودکار/ راپید</a>
+              </h3>
+              <h3 class="hover:text-hover">
+                <a href="./product-page.html?Name=SiahQalam">سیاه‌قلم</a>
+              </h3>
+            </div>
+            <div
+              class="absolute h-[2px] w-0 bottom-0 bg-red-500 transition-all duration-150 ease-linear"
+            ></div>
+          </li>
+          <li
+            class="btn flex justify-center items-center h-[40px] hover:scale-110 duration-200"
+          >
+            <a href="#">شمع</a>
+          </li>
+          <li
+            class="flex justify-center items-center h-[40px] hover:scale-110 duration-200"
+          >
+            <a href="#">استیکر</a>
+          </li>
+          <li
+            class="flex justify-center items-center h-[40px] hover:scale-110 duration-200"
+          >
+            <a href="#">لوازم‌هنری</a>
+          </li>
+          <li
+            class="flex justify-center items-center h-[40px] hover:scale-110 duration-200"
+          >
+            <a href="#">درباره ما</a>
+          </li>
         </ul>
       </div>
       <!--End Menu-->
@@ -228,29 +405,21 @@
     >
       <!--Start First Slider-->
       <div
-        class="md:w-[80%] w-full xl:h-[380px] md:h-[280px] h-[180px] bg-primary1 rounded-[32px] shadow-lg"
+        class="md:w-[80%] w-full bg-primary1 rounded-[32px] shadow-lg"
       >
         <div class="swiper mySwiper1 slider1 w-full h-full group">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./media/purple cloud.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide"><img src="./media/first slider/Watercolor-new.jpg" class="rounded-[32px]"></div>
+            <div class="swiper-slide"><img src="./media/first slider/Sketch-new.jpg" class="rounded-[32px]"></div>
+            <div class="swiper-slide"><img src="./media/first slider/SiahQalam-new.jpg" class="rounded-[32px]"></div>
           </div>
           <div
-            class="swiper-button-next w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+            class="swiper-button-next w-[40px] h-[40px] absolute top-96 !right-24 bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
           >
             <img src="./media/svg/Left.svg" alt="" />
           </div>
           <div
-            class="swiper-button-prev w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
+            class="swiper-button-prev w-[40px] h-[40px] absolute top-96 !right-12 bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
           >
             <img src="./media/svg/Right.svg" alt="" />
           </div>
@@ -348,10 +517,11 @@
       <section
         class="suggestion md:w-[80%] w-full bg-menu rounded-[32px] p-[20px] shadow-lg font-IranYekanN"
       >
-        <div
-          class="swiper mySwiper2 slider2 w-full h-full group rounded-[26px] flex"
-        >
-          <div class="swiper-wrapper h-[390px]" id="swiper-wrapper"></div>
+        <div class="swiper mySwiper2 slider2 w-full group rounded-[26px] flex">
+          <div
+            class="swiper-wrapper lg:h-[360px] xl:h-[390px]"
+            id="swiper-wrapper"
+          ></div>
 
           <div
             class="swiper-button-next w-[40px] h-[40px] absolute bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
@@ -392,14 +562,14 @@
             >
               <div>
                 <a
-                  href="#"
+                  href="https://t.me/Mh_zvr"
                   class="py-[8px] px-[16px] rounded-[16px] bg-secondary1 hover:bg-hover text-icon font-IranYekanL border hover:border-secondary1 text-[14px] shadow-[20px]"
                   >سفارش نقاشی</a
                 >
               </div>
               <div>
                 <a
-                  href="#"
+                  href="https://t.me/Mh_zvr"
                   class="py-[8px] px-[16px] rounded-[16px] border hover:border-secondary1 bg-primary1 hover:bg-hover text-secondary1 hover:text-icon text-[14px] shadow-xl"
                   >درخواست مشاوره</a
                 >
@@ -413,36 +583,6 @@
         </div>
       </div>
       <!--End Commission-->
-
-      <!--Start Third Slider-->
-      <div
-        class="md:w-[80%] w-full xl:h-[380px] md:h-[280px] h-[180px] bg-primary1 rounded-[32px] shadow-lg"
-      >
-        <div class="swiper mySwiper1 slider1 w-full h-full group">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">slider 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-          </div>
-          <div
-            class="swiper-button-next w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
-          >
-            <img src="./media/svg/Left.svg" alt="" />
-          </div>
-          <div
-            class="swiper-button-prev w-[40px] h-[40px] absolute top-[340px] bg-icon rounded-[50%] opacity-0 group-hover:opacity-100 transition-all duration-150 ease-linear"
-          >
-            <img src="./media/svg/Right.svg" alt="" />
-          </div>
-        </div>
-      </div>
-      <!--End Third Slider-->
 
       <!--Start Options-->
       <div
@@ -459,7 +599,7 @@
           </div>
 
           <div
-            class="lg:w-[200px] w-[170px] lg:h-[150px] h-[110px] flex flex-col gap-[10px] lg:gap-[24px] justify-center items-center bg-primary1 rounded-[32px] shadow-lg"
+            class="lg:w-[200px] w-[170px] lg:h-[150px] h-[110px] p-[15px] flex flex-col gap-[10px] lg:gap-[24px] justify-center items-center bg-primary1 rounded-[32px] shadow-lg"
           >
             <img src="./media/svg/box-pin-location.svg" alt="" />
             <span class="lg:text-base text-sm">ارسال به سراسر کشور</span>
@@ -499,7 +639,7 @@
           >
             <h2 class="mb-0" id="headingOne">
               <button
-                class="group text-start flex w-full items-center justify-between px-5 py-3 rounded-t-lg rounded-b-lg text-[15px] md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                class="group text-start flex w-full items-center justify-between rounded-t-lg rounded-b-lg px-3 md:px-5 py-2 md:py-3 text-sm md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
                 type="button"
                 data-te-collapse-init
                 data-te-collapse-collapsed
@@ -535,7 +675,9 @@
               aria-labelledby="headingOne"
               data-te-parent="#accordionExample"
             >
-              <div class="px-5 py-4 bg-menu text-[15px] leading-9 rounded-b-lg">
+              <div
+                class="px-3 md:px-5 py-2 md:py-3 bg-menu text-sm md:text-[15px] leading-8 rounded-b-lg"
+              >
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
                 در ستون و سطرآنچنان که لازم است، و برای شرایوان امید داشت که
@@ -547,7 +689,7 @@
           >
             <h2 class="mb-0" id="headingTwo">
               <button
-                class="group text-start flex w-full items-center justify-between px-5 py-3 rounded-t-lg rounded-b-lg text-[15px] md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                class="group text-start flex w-full items-center justify-between rounded-t-lg rounded-b-lg px-3 md:px-5 py-2 md:py-3 text-sm md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
                 type="button"
                 data-te-collapse-init
                 data-te-collapse-collapsed
@@ -583,7 +725,9 @@
               aria-labelledby="headingTwo"
               data-te-parent="#accordionExample"
             >
-              <div class="px-5 py-4 bg-menu text-[15px] leading-9 rounded-b-lg">
+              <div
+                class="px-3 md:px-5 py-2 md:py-3 text-sm md:text-[15px] bg-menu leading-8 rounded-b-lg"
+              >
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
                 در ستون و سطرآنچنان که لازم است، و برای شرایوان امید داشت که
@@ -595,7 +739,7 @@
           >
             <h2 class="accordion-header mb-0" id="headingThree">
               <button
-                class="group text-start flex w-full items-center justify-between rounded-b-lg rounded-t-lg px-5 py-3 text-[15px] md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                class="group text-start flex w-full items-center justify-between rounded-b-lg rounded-t-lg px-3 md:px-5 py-2 md:py-3 text-sm md:text-base text-secondary1 hover:bg-hover hover:text-icon [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-black ![&:not([data-te-collapse-collapsed])]:text-white [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
                 type="button"
                 data-te-collapse-init
                 data-te-collapse-collapsed
@@ -632,7 +776,7 @@
               data-te-parent="#accordionExample"
             >
               <div
-                class="px-5 py-4 bg-menu rounded-b-lg rounded-t-lg text-[15px] leading-9"
+                class="px-3 md:px-5 py-2 md:py-3 text-sm md:text-[15px] bg-menu rounded-b-lg rounded-t-lg leading-8"
               >
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
@@ -650,35 +794,35 @@
 
     <!--Start Footer-->
     <div
-      class="w-full rounded-t-[32px] p-[24px] pb-[12px] bg-primary1 flex md:flex-row flex-col justify-between gap-[20px] md:text-base text-sm"
+      class="w-full rounded-t-[32px] p-[24px] pb-[12px] bg-primary1 flex md:flex-row flex-col justify-between gap-3 md:gap-[20px] md:text-base text-sm"
     >
       <div class="flex flex-col gap-3">
         <a href="#" class="hover:text-hover">درباره ما</a>
         <a href="#" class="hover:text-hover">تماس با ما</a>
       </div>
-      <div class="flex flex-col gap-3 md:items-end items-center">
-        <div class="flex gap-4">
+      <div class="flex flex-col gap-2 md:gap-3 md:items-end items-center">
+        <div class="flex gap-4 text-sm md:text-base">
           <a
             href="https://t.me/Mh_zvr"
-            class="w-[48px] h-[48px] text-secondary1 bg-footer rounded-[10px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+            class="w-10 md:w-[48px] h-10 md:h-[48px] text-secondary1 bg-footer rounded-2xl flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
             ><img src="./media/svg/Telegram.svg" />
           </a>
 
           <a
             href="https://instagram.com/skumring_land"
-            class="w-[48px] h-[48px] text-secondary1 bg-footer rounded-[10px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+            class="w-10 md:w-[48px] h-10 md:h-[48px] text-secondary1 bg-footer rounded-2xl flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
             ><img src="./media/svg/Instagram.svg" />
           </a>
 
           <a
             href="#"
-            class="w-[48px] h-[48px] text-secondary1 bg-footer rounded-[10px] flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
+            class="w-10 md:w-[48px] h-10 md:h-[48px] text-secondary1 bg-footer rounded-2xl flex items-center justify-center hover:bg-hover transition-all duration-150 ease-linear"
             ><img src="./media/svg/Whatsapp.svg" />
           </a>
         </div>
         <a
           href="tel:09934003450"
-          class="text-base flex gap-2 hover:text-hover font-IranYekanN"
+          class="text-sm md:text-base flex gap-2 hover:text-hover font-IranYekanN"
         >
           09934003450<img src="./media/svg/Phone.svg" />
         </a>
@@ -686,9 +830,9 @@
     </div>
     <!--Start Coptright-->
     <div
-      class="w-full h-9 bg-footer text-hover text-sm flex justify-center items-center"
+      class="w-full h-9 bg-footer text-hover text-xs md:text-sm text-center flex justify-center items-center font-IranYekanN"
     >
-      &#169; کلیه حقوق این سایت متعلق به (فروشگاه اینترنتی آرورا) می‌باشد
+      &#169;1402 - کلیه حقوق این سایت متعلق به (فروشگاه اینترنتی آرورا) می‌باشد.
     </div>
     <!--End Coptright-->
     <!--End Footer-->

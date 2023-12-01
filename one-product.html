@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>صفحه محصول</title>
+    <title>تک محصول</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -13,17 +13,13 @@
       rel="stylesheet"
       href="./node_modules/tw-elements/dist/css/tw-elements.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="./fontawesome-free-6.4.2-web/css/all.min.css"
-    />
     <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/one-product.css" />
   </head>
   <body class="font-IranYekan text-secondary1 min-h-[100vh] flex flex-col">
     <!--Start Navbar-->
     <nav
-      class="w-full h-[64px] md:h-[104px] bg-menu rounded-b-3xl fixed top-0 z-[800] shadow-lg"
+      class="w-full h-[64px] md:h-[104px] bg-menu rounded-b-[24px] fixed top-0 z-[800] shadow-lg"
       id="nav"
     >
       <!--Start Hamburger Menu-->
@@ -91,7 +87,7 @@
                     نقاشی و طراحی
                   </a>
                   <span
-                    class="float-left rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 [[data-te-collapse-collapsed]]:rotate-0 motion-reduce:transition-none"
+                    class="float-left rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none"
                     type="button"
                     data-te-collapse-init
                     data-te-collapse-collapsed
@@ -125,24 +121,34 @@
                   <div
                     class="px-5 py-1 text-hover text-sm leading-8 rounded-b-lg flex flex-col items-start"
                   >
-                    <button id="Abrang" class="Abrang hover:text-secondary1">
+                    <a
+                      href="./product-page.html?Name=Abrang"
+                      id="Abrang"
+                      class="hover:text-secondary1"
+                    >
                       آبرنگ
-                    </button>
-                    <button
+                    </a>
+                    <a
+                      href="./product-page.html?Name=MedadRangi"
                       id="MedadRangi"
-                      class="MedadRangi hover:text-secondary1"
+                      class="hover:text-secondary1"
                     >
                       مدادرنگی
-                    </button>
-                    <button id="Rapid" class="Rapid hover:text-secondary1">
+                    </a>
+                    <a
+                      href="./product-page.html?Name=Rapid"
+                      id="Rapid"
+                      class="hover:text-secondary1"
+                    >
                       خودکار / راپید
-                    </button>
-                    <button
+                    </a>
+                    <a
+                      href="./product-page.html?Name=SiahQalam"
                       id="SiahQalam"
-                      class="SiahQalam hover:text-secondary1"
+                      class="hover:text-secondary1"
                     >
                       سیاه قلم
-                    </button>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -249,7 +255,7 @@
 
       <!--Start Top navbar-->
       <div
-        class="logo h-[64px] bg-nav px-[20px] md:px-[50px] rounded-b-3xl flex items-center justify-between"
+        class="logo h-[64px] bg-nav px-[20px] md:px-[50px] rounded-b-[24px] flex items-center justify-between"
         id="topnav"
       >
         <!--Start Navbar Right side-->
@@ -402,7 +408,7 @@
       class="md:container w-[95%] mt-20 md:mt-32 mx-auto p-0 md:p-3 lg:p-0 flex flex-col items-center gap-4 md:gap-5 grow"
     >
       <!--Start crumb-->
-      <nav class="w-full lg:w-[80%] px-3" aria-label="Breadcrumb">
+      <nav class="w-full lg:w-[70%] px-3" aria-label="Breadcrumb">
         <ol
           class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
         >
@@ -415,11 +421,20 @@
               خانه
             </a>
           </li>
+          <li class="inline-flex items-center">
+            <a
+              href="./product-page.html?Name=Abrang"
+              class="md:ms-2 inline-flex items-center text-sm font-medium hover:text-hover text-secondary1"
+            >
+              <img src="./media/svg/Left.svg" class="w-4 h-4 me-2" />
+              نقاشی
+            </a>
+          </li>
           <li aria-current="page">
             <div class="flex items-center">
               <img src="./media/svg/Left.svg" class="w-4 h-4" />
               <span class="ms-1 text-sm font-medium text-secondary1 md:ms-2"
-                >نقاشی</span
+                >آبرنگ</span
               >
             </div>
           </li>
@@ -427,206 +442,73 @@
       </nav>
       <!--End crumb-->
 
+      <!--Start one-product-->
       <div
-        class="w-full lg:w-[80%] flex justify-between items-start gap-4 font-IranYekanN"
+        class="w-full lg:w-[80%] flex flex-col md:flex-row justify-evenly items-center md:items-start gap-4"
       >
-        <!--Start Filter category-->
-        <div
-          class="hidden md:block rounded-3xl shadow-lg bg-nav p-3 pb-4 px-3 lg:px-4 xl:px-5 flex flex-col items-start gap-3 grow"
-        >
-          <p
-            class="lg:w-[190px] xl:w-[220px] lg:mx-0 xl:mx-2 p-2 lg:px-3 xl:px-4 border-b border-hover text-[15px] lg:text-base"
-          >
-            <i class="fa-solid fa-circle text-xs lg:ml-1 xl:ml-2"></i>
-            دسته بندی محصولات
-          </p>
-          <div id="accordionExample" class="w-full flex flex-col gap-1 p-1">
-            <div>
-              <h2
-                class="w-full mb-0 p-1 px-2 flex items-center justify-between"
-                id="headingOne"
-              >
-                <a
-                  href="./product-page.html"
-                  class="group text-start text-[15px] text-secondary1 hover:text-hover [overflow-anchor:none] hover:z-[2] focus:z-[3]"
-                  id="paint-menu"
-                >
-                  نقاشی و طراحی
-                </a>
-                <span
-                  class="float-left rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 [[data-te-collapse-collapsed]]:rotate-0 motion-reduce:transition-none"
-                  type="button"
-                  data-te-collapse-init
-                  data-te-collapse-collapsed
-                  data-te-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-6 w-6 bg-footer p-1 rounded-[50%] hover:text-hover"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </h2>
-              <div
-                id="collapseOne"
-                class="!visible"
-                data-te-collapse-item
-                aria-labelledby="headingOne"
-                data-te-parent="#accordionExample"
-              >
-                <div
-                  class="px-5 py-1 text-hover text-sm leading-8 rounded-b-lg flex flex-col items-start"
-                >
-                  <button class="Abrang hover:text-secondary1">آبرنگ</button>
-                  <button class="MedadRangi hover:text-secondary1">
-                    مدادرنگی
-                  </button>
-                  <button class="Rapid hover:text-secondary1">
-                    خودکار / راپید
-                  </button>
-                  <button class="SiahQalam hover:text-secondary1">
-                    سیاه قلم
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h2 class="mb-0" id="headingTwo">
-                <button
-                  class="group w-full text-start flex items-center justify-between px-2 py-1 rounded-t-lg rounded-b-lg text-[15px] md:text-base text-hover hover:text-secondary1 cursor-default [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none"
-                  type="button"
-                >
-                  <p class="text-sm">
-                    <i class="fa-solid fa-circle-half-stroke text-xs"></i>
-                    شمع
-                  </p>
-                </button>
-              </h2>
-            </div>
-            <div>
-              <h2
-                class="w-full mb-0 p-1 px-2 flex items-center justify-between"
-                id="headingThree"
-              >
-                <a
-                  href="#"
-                  class="group text-start text-[15px] text-secondary1 hover:text-hover [overflow-anchor:none] hover:z-[2] focus:z-[3]"
-                  id="sticker-menu"
-                >
-                  استیکر
-                </a>
-                <span
-                  class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 motion-reduce:transition-none"
-                  type="button"
-                  data-te-collapse-init
-                  data-te-collapse-collapsed
-                  data-te-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-6 w-6 bg-footer p-1 rounded-[50%] hover:text-hover"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </h2>
-              <div
-                id="collapseThree"
-                class="!visible hidden"
-                data-te-collapse-item
-                aria-labelledby="headingThree"
-                data-te-parent="#accordionExample"
-              >
-                <div
-                  class="px-5 py-1 text-hover text-sm leading-8 rounded-b-lg flex flex-col items-start"
-                >
-                  <button class="hover:text-secondary1">استیکر 1</button>
-                  <button class="hover:text-secondary1">استیکر 2</button>
-                  <button class="hover:text-secondary1">استیکر 3</button>
-                </div>
-              </div>
-            </div>
+        <!--Start Photo-->
+        <div class="w-3/4 md:w-2/5 flex flex-col gap-2">
+          <div class="photo w-full">
+            <img src="./media/Abrang/kooki-butter.jpg" class="rounded-2xl" />
+          </div>
+          <div class="other-photos w-full grid grid-cols-3 gap-3">
+            <img src="./media/Abrang/cheshm.jpg" class="rounded-2xl" />
+            <img src="./media/Abrang/smorf.jpg" class="rounded-2xl" />
+            <img src="./media/Abrang/au.jpg" class="rounded-2xl" />
           </div>
         </div>
-        <!--End Filter category-->
+        <!--End Photo-->
 
-        <!--Start showing product-->
+        <!--Start photo-content-->
         <div
-          class="w-full md:w-[530px] lg:w-[1000px] flex flex-col gap-3 md:gap-5 lg:gap-4"
+          class="photo-content w-3/4 md:w-2/5 h-[400px] lg:h-[430px] xl:h-[480px] p-7 md:p-8 lg:p-9 font-IranYekanN flex flex-col justify-start gap-2 md:gap-4 bg-nav rounded-2xl"
         >
-          <!--Start filter part-->
           <div
-            class="w-full h-[55px] md:h-[75px] px-3 md:px-5 lg:px-8 text-xs bg-nav rounded-3xl shadow-lg flex items-center gap-5 lg:gap-6 flex-wrap md:flex-nowrap"
+            class="w-full h-3/5 md:h-2/3 flex flex-col items-center justify-evenly"
           >
-            <p class="text-sm whitespace-nowrap">مرتب سازی بر اساس:</p>
-            <button
-              class="p-3 text-footer bg-secondary1 rounded-3xl hidden md:block"
-            >
-              محبوب‌ترین
-            </button>
-            <button
-              class="p-3 text-hover rounded-3xl hover:text-secondary1 hidden md:block"
-            >
-              جدیدترین
-            </button>
-            <button
-              class="p-3 text-hover rounded-3xl hover:text-secondary1 hidden md:block"
-            >
-              گران‌ترین
-            </button>
-            <button
-              class="p-3 text-hover rounded-3xl hover:text-secondary1 hidden md:block"
-            >
-              ارزان‌ترین
-            </button>
-            <select
-              name="ordering"
-              class="w-36 h-8 px-1 rounded-lg bg-icon md:hidden"
-            >
-              <option value="popular">محبوب‌ترین</option>
-              <option value="newest">جدیدترین</option>
-              <option value="richest">گران‌ترین</option>
-              <option value="poorest">ارزان‌ترین</option>
-            </select>
-          </div>
-          <!--End filter part-->
+            <h4 class="text-xl sm:text-2xl font-bold">نقاشی باتر جونگکوک</h4>
+            <h4 class="text-sm sm:text-[15px] font-medium">آبرنگ</h4>
+            <p class="text-base sm:text-lg lg:text-xl font-semibold">
+              50,000 تومان
+            </p>
 
-          <!--Start product-->
-          <div
-            class="w-full p-1 md:p-3 xl:p-4 grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 xl:gap-[22px]"
-            id="product"
-          ></div>
-          <!--End product-->
+            <div class="product-count flex gap-1">
+              <button class="button-count w-[30px] h-[30px] bg-hover text-icon inline-flex justify-center rounded-lg rounded-l-none text-2xl no-active" disabled>-</button>
+              <input type="text" readonly class="number-product w-9 h-8 text-lg text-center" value="1">
+              <button class="button-count w-[30px] h-[30px] bg-hover text-icon inline-flex justify-center rounded-lg rounded-r-none text-2xl">+</button>
+            </div>
+
+            <button
+              class="w-52 md:w-48 lg:w-52 h-10 lg:h-12 rounded-xl md:rounded-2xl bg-secondary1 text-icon font-IranYekanL text-sm shadow-[20px] flex justify-center items-center gap-1 font-semibold hover:shadow-2xl"
+            >
+              افزودن به سبد خرید
+              <img src="./media/svg/Basket-hover.svg" class="w-6 h-6" />
+            </button>
+          </div>
+          <ol
+            class="h-1/3 p-2 flex flex-col gap-2 md:gap-3 items-start list-disc list"
+          >
+            <li class="text-base md:text-sm lg:text-base text-hover">
+              <span class="text-secondary1">اندازه</span>
+            </li>
+            <li class="text-base md:text-sm lg:text-base text-hover">
+              <span class="text-secondary1">اندازه</span>
+            </li>
+            <li class="text-base md:text-sm lg:text-base text-hover">
+              <span class="text-secondary1">اندازه</span>
+            </li>
+          </ol>
         </div>
-        <!--End showing product-->
+
+        <!--End photo-content-->
       </div>
+      <!--End one-product-->
     </div>
     <!--End Body-->
 
     <!--Start Footer-->
     <div
-      class="w-full rounded-t-[32px] p-[24px] pb-[12px] bg-primary1 flex md:flex-row flex-col justify-between gap-3 md:gap-[20px] md:text-base text-sm mt-8"
+      class="w-full rounded-t-[32px] p-[24px] pb-[12px] bg-primary1 flex md:flex-row flex-col justify-between gap-3 md:gap-[20px] md:text-base text-sm mt-9"
     >
       <div class="flex flex-col gap-3">
         <a href="#" class="hover:text-hover">درباره ما</a>
@@ -662,7 +544,7 @@
     </div>
     <!--Start Coptright-->
     <div
-      class="w-full h-9 bg-footer text-hover text-xs md:text-sm text-center flex justify-center items-center font-IranYekanN"
+      class="w-full h-9 bg-footer text-hover text-xs md:text-sm text-center flex justify-center items-center font-IranYekanN "
     >
       &#169;1402 - کلیه حقوق این سایت متعلق به (فروشگاه اینترنتی آرورا) می‌باشد.
     </div>
@@ -674,6 +556,6 @@
       src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
     ></script>
     <script src="./jquery/dist/jquery.min.js"></script>
-    <script src="./js/product.js"></script>
+    <script src="./js/one-product.js"></script>
   </body>
 </html>

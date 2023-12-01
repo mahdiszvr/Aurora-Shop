@@ -45,18 +45,24 @@ div#search-navbar2 {
   left: 12px;
   border-bottom-right-radius: 8px;
   transition: all 300ms linear;
+  color: #580063;
 }
 .add:hover{
   background-color: #580063;
-  color: #faeaff;
 }
-.add:hover p > img{
+.add:hover > p{
   color: #faeaff !important;
 }
-a.addHover:hover  div.add {
-  width: 200px;
+.add:hover > p > img:nth-of-type(1){
+  width: 0;
 }
-.addHover:hover div.add  p {
+.add:hover > p > img:nth-of-type(2){
+  width: 24px;
+}
+a.addHover:hover div.add {
+  width: auto;
+}
+.addHover:hover div.add p {
   width: auto;
   opacity: 1;
 }

@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./*.html" , "./node_modules/tw-elements/dist/js/*.js","./js/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'menuShadow': '0 1000px 0 1000px #D2AFFF',
+      }
+    },
     presets: [],
     fontFamily: {
       IranYekan: ["IRANyekan"],
@@ -12,11 +16,11 @@ module.exports = {
       Lalezar: ["LalehZar"],
     },
     colors: {
-      primary1: "#e1aeff",
-      nav: "#dda7fc",
+      primary1: "#D2AFFF",
+      nav: "#D8B9FF",
       secondary1: "#580063",
       icon: "#faeafb",
-      menu: "#e7c2fd",
+      menu: "#E1C4FF",
       hover: "#57006369",
       footer: "#f8d6ff",
     },
